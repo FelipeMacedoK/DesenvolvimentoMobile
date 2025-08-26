@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="icon-512.jpg" alt="Random Color Generator Cover" class="cover-image">
+        <h1>Click on any box to change its background color to a random color.</h1>
+        <div class="random-bg" onclick="refreshBgColor(this)">
+            <img src="icon-192.jpg" alt="Color Icon" class="color-icon">
+        </div>
+        <div class="random-bg" onclick="refreshBgColor(this)">
+            <img src="icon-192.jpg" alt="Color Icon" class="color-icon">
+        </div>
+        <div class="random-bg" onclick="refreshBgColor(this)">
+            <img src="icon-192.jpg" alt="Color Icon" class="color-icon">
+        </div>
+        <div class="random-bg" onclick="refreshBgColor(this)">
+            <img src="icon-192.jpg" alt="Color Icon" class="color-icon">
+        </div>
+        <div class="random-bg" onclick="refreshBgColor(this)">
+            <img src="icon-192.jpg" alt="Color Icon" class="color-icon">
+        </div>
+        <div class="random-bg" onclick="refreshBgColor(this)">
+            <img src="icon-192.jpg" alt="Color Icon" class="color-icon">
+        </div>
+    </div>
+    <footer>
+        <p class="footer">&copy; 2025 Felipe Macedo. All rights reserved.</p>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
+</body>
+</html>
